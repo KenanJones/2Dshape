@@ -1,6 +1,6 @@
 package edu.jalc.shape;
 
-class Ellipse extends TwoDimensionalShape{
+public class Ellipse extends TwoDimensionalShape{
 
    private double majorAxis;
    private double minorAxis;
@@ -20,5 +20,9 @@ class Ellipse extends TwoDimensionalShape{
 
    public double getArea(){
      return Math.PI * majorAxis * minorAxis;
+   }
+
+   public String toString(){
+     return "ellipse of area " + getArea();
    }
 }

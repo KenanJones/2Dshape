@@ -1,6 +1,6 @@
 package edu.jalc.shape;
 
-class Rectangle extends TwoDimensionalShape{
+public class Rectangle extends TwoDimensionalShape{
 
    private double height;
    private double width;
@@ -19,5 +19,9 @@ class Rectangle extends TwoDimensionalShape{
    }
    public double getArea(){
      return height * width;
+   }
+
+   public String toString(){
+     return "rectangle of area " + getArea();
    }
 }
