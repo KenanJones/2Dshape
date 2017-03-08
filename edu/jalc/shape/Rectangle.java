@@ -1,6 +1,6 @@
 package edu.jalc.shape;
 
-public class Rectangle extends TwoDimensionalShape{
+public class Rectangle extends Polygon{
 
    private double height;
    private double width;
