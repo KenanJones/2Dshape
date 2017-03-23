@@ -1,2 +1,2 @@
 # shape
-inheritance and polymorphism for cps 206 lab 3
+inheritance and polymorphism for cps 206 lab 3.
