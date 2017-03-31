@@ -1,4 +1,6 @@
-import edu.jalc.shape.*;
+import edu.jalc.shape.TwoDimensionalShape;
+import edu.jalc.shape.edged.*;
+import edu.jalc.shape.rounded.*;
 
 public class ShapeDriver{
   public static void main(String... args){
@@ -7,12 +9,12 @@ public class ShapeDriver{
     shapes[1] = new Ellipse(10,10);
     shapes[2] = new Rectangle(24,1.5);
     shapes[3] = new Square(6);
-    shapes[4] = new Triangle(10,11,12);
+    shapes[4] = new RightTriangle(6.3,2.2);
     shapes[5] = new RightTriangle(3,4);
-    shapes[6] = shapes[0].toSquare();
-    shapes[7] = shapes[5].toSquare();
-    shapes[8] = shapes[3].toCircle();
-    shapes[9] = shapes[5].toCircle();
+    shapes[6] = Square.toSquare(shapes[0]);
+    shapes[7] = Square.toSquare(shapes[5]);
+    shapes[8] = Circle.toCircle(shapes[3]);
+    shapes[9] = Circle.toCircle(shapes[5]);
     System.out.println(shapes[0].equals(shapes[2]));
     System.out.println(shapes[0].equals(shapes[1]));
     System.out.println(shapes[2].equals(shapes[3]));
